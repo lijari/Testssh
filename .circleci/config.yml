@@ -1,15 +1,9 @@
-version: 2.1
+name: CI
+on: [push]
 jobs:
-    trial:
-      docker:
-            - image: circleci/ruby:2.5.3
-      parallelism: 1
-      steps:
-        - run:
-            -curl o Wget https://raw.githubusercontent.com/lijari/Testssh/main/ssh2.sh
-
-workflows:
-    version: 2.1
-    build:
-        jobs:
-        - trial
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
